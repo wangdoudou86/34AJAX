@@ -21,7 +21,7 @@ window.jQuery.ajax = function({url,method,body,headers}){
   // let headers = options.headers
   // let {url,method,body,success,fail,headers} = options
   //这6句let可用ES6的解构赋值语法替换，就是最后一句，也可以直接就写在参数中
-  return new Promise(function(resolve,reject){
+  return new Promise(function(resolve, reject){//这六个单词是最重要的
 
     let request = new XMLHttpRequest()
     request.open(method,url)//配置request
